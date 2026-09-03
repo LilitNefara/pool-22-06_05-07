@@ -13,7 +13,11 @@ int main(void) {
 }
 
 int fib(int a) {
-    if (a == 0) return 0;
-    if (a == 1) return 1;
-    return fib(a - 1) + fib(a - 2);
+    int result;
+
+    if (a == 0) result = 0;
+    else if (a == 1) result = 1;
+    else result = fib(a - 1) + fib(a - 2);
+
+    return result;
 }
