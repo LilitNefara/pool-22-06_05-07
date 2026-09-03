@@ -14,7 +14,7 @@ int main(void) {
 
 int func(int a) {
     if (a < 0) {
-        a -= a;
+        a = -a;
     }
     int result;
     for (int i = 1; i < a; i++) {
